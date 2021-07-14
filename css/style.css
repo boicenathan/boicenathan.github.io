@@ -321,8 +321,8 @@ header {
 }
 
 .service {
-    max-width: 100%;
-    margin: 0 auto;
+    width: 100%;
+    margin: 0;
 }
 
 @media (min-width: 800px) {
@@ -334,6 +334,7 @@ header {
     }
     
     .service + .service {
+        max-width: 33.33%;
         margin-left: 2em;
     }
 }
