@@ -38,7 +38,9 @@
             <h1 class="section__title section__title--intro">
                 <strong>Trello Data Transformation</strong>
             </h1>
-            <p class="section__subtitle section__subtitle--intro">Python</p>
+            <p class="section__subtitle section__subtitle--intro">Repository:
+            <a href="https://github.com/boicenathan/trello_data_transformation">
+                        <i class="fab fa-github"></i></a></p>
             <img src="../img/trello.gif" alt="" class="intro__img">
         </section>
         
@@ -49,17 +51,21 @@
             <!-- un comment for image <img src="../img/comp.jpg" alt=""> -->
             <p>As our dataset grew, Excel was not capable of handling all the data.  As a result I decided to create scripts that would
             not only consolidate multiple boards but transform the data within.  What would take our team hours or weeks to perform now 
-            completes these tasks in seconds.  To clone or check out this repo you can check it out on my Github<a href="https://github.com/boicenathan/trello_data_transformation">here</a>.</p>
+            completes these tasks in seconds.</p>
             <p><strong>File Consolidator</strong></p>
             <p>When exporting a Trello team, Trello downloads a zipped folder with each board in a sub folder.  The contents should be extracted
             into the data folder within this repo.  If you are trying to merge a couple of files Excel may be just fine, but in our case we needed to merge over 500 files.
             The initial version of this script took ~30-45 minutes to merge all the files and after a few iterations it now takes ~1 minute.</p>
             <p><strong>File Trimmer</strong></p>
-            <p>Info Coming Soon!</p>
+            <p>This script was created to trim down the merged file so that, if needed, we could manipulate the file in Excel.  To save time at the top of the file you can update the list of column names 
+            to load if you know which columns you need or want.  From there the file will filter out any rows where the list name isn't in the list we specified at the top and filter out 
+            rows where the Date of Last Activity isn't within the start or end date.</p>
             <p><strong>Data Compare</strong></p>
-            <p>Info Coming Soon!</p>
+            <p>A big part of being a Data Analyst is validating data.  If you're familiar with Excel you can think of this as a Vlookup.  It merges the columns on an indicator, Card ID in this case, and 
+            creates a new column with an indicator of whether the fields match or not.</p>
             <p><strong>Card Counter</strong></p>
-            <p>Info Coming Soon!</p>
+            <p>Trello has technical limits for exporting the data from each board one being the number of cards on the board.  This script was created to do a quick count of how many cards are on each board 
+            using the merged file.</p>
         </div>
         
         
