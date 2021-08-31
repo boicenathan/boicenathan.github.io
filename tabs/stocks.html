@@ -36,17 +36,28 @@
 
         <section class="intro">
             <h1 class="section__title section__title--intro">
-                <strong>Predicting Stock Prices</strong>
+                <strong>Current and Target Stock Prices</strong>
             </h1>
-            <p class="section__subtitle section__subtitle--intro">Python</p>
+            <p class="section__subtitle section__subtitle--intro">Repository:
+            <a href="https://github.com/boicenathan/stocks_analysis">
+                        <i class="fab fa-github"></i></a></p>
             <img src="../img/cloud.jpg" alt="" class="intro__img">
         </section>
         
         <div class="portfolio-item-individual">
-            <p>A script to predict stock prices.</p>
+            <p><strong>About</strong><p>
             <!-- un comment for image <img src="../img/comp.jpg" alt=""> -->
-            <p>Coming Soon!</p>
-            <p></p>
+            <p>I've always been interested in the stock market and how it works, but like many, just don't have the time to put into collecting and analyzing all the info.
+            A very simple strategy can be relying on analysts target price predictions.  Now this works just fine for passive investors who like to set it and forget it and set
+            an alert when the stock hits the target price.  But there are thousands of stocks out there, which ones are the best or where should I start looking?  The solution, 
+            the program I created that will do this analysis for any list of ticker symbols provided.</p>
+            <p><strong>Technical Limitations and Conditions</strong><p>
+            <p>The API used is the Yahoo Finance API by Api Dojo and can be found <a href= "https://rapidapi.com/apidojo/api/yahoo-finance1/">here.</a>
+            I use the basic plan which allows for 500 requests per month and 5 requests per second.  Because of this I take the first 500 tickers in the list sorted in descending
+            order by market cap, and if the time between requests is less than .2 seconds the program will wait the difference.</p>
+            <p>A condition I added was to filter the list of tickers by the last close price to tickers with a price between $10 and $5,000.  This was added to help eliminate stocks
+            that are too high or low based on the users preference.  For me, I'm not interested in "penny" stocks or very expensive stocks like Berkshire Hathaway.</p>
+            <p>For more details visit the readme on the Github repository.</p>
         </div>
         
         
