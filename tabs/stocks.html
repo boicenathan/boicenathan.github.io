@@ -51,6 +51,11 @@
             A very simple strategy can be relying on analysts target price predictions.  Now this works just fine for passive investors who like to set it and forget it and set
             an alert when the stock hits the target price.  But there are thousands of stocks out there, which ones are the best or where should I start looking?  The solution, 
             the program I created that will do this analysis for any list of ticker symbols provided.</p>
+            <p><strong>How It Works</strong><p>
+            <p>Using the Yahoo Finance API, the program uses the tickers provided and will collect info like the previous close, low, average, and high target price, etc.  Then it
+            will calculate the difference both in dollars and percentages between the previous close and target prices.  Lastly, it calculates an artificial 'risk' value based on the
+            target prices and the potential upside and downside of the stock.  When the program is done it saves the dataframe, which is sorted highest average upside to lowest, to a CSV
+            in the data folder of this repository.
             <p><strong>Technical Limitations and Conditions</strong><p>
             <p>The API used is the Yahoo Finance API by Api Dojo and can be found <a href= "https://rapidapi.com/apidojo/api/yahoo-finance1/">here.</a>
             I use the basic plan which allows for 500 requests per month and 5 requests per second.  Because of this I take the first 500 tickers in the list sorted in descending
